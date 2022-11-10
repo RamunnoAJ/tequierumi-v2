@@ -1,13 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 import Header from '../components/Header'
+import HomeMain from '../components/HomeMain'
+import HomeStore from '../components/HomeStore'
 import Footer from '../components/Footer'
 
 function Home() {
   return (
     <>
       <Header />
+      <HomeMain />
+      <HomeStore />
       <Footer />
     </>
   )
