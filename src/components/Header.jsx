@@ -59,7 +59,7 @@ function Header() {
                 to={'/login'}
                 className='hover:text-black transition-all duration-300 ease-in-out'
               >
-                <i class='fa-solid fa-user'></i>
+                <i className='fa-solid fa-user'></i>
               </Link>
             </li>
           </ul>
