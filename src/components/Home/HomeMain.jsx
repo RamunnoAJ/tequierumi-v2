@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import Button from '../components/Button'
-import HomeImage from '../components/HomeImage'
+import Button from '../Button'
+import HomeImage from './HomeImage'
 
 function HomeMain() {
   return (

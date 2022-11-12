@@ -1,10 +1,10 @@
 import React from 'react'
 
 import Header from '../components/Header'
-import HomeMain from '../components/HomeMain'
-import HomeProcess from '../components/HomeProcess'
-import HomeStore from '../components/HomeStore'
-import HomeContact from '../components/HomeContact'
+import HomeMain from '../components/Home/HomeMain'
+import HomeProcess from '../components/Home/HomeProcess'
+import HomeStore from '../components/Home/HomeStore'
+import HomeContact from '../components/Home/HomeContact'
 import Footer from '../components/Footer'
 
 function Home() {

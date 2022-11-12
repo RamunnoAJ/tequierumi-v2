@@ -1,6 +1,6 @@
 import React from 'react'
-import Product from './Product'
-import image1 from '../assets/product1.jpg'
+import Product from '../Product'
+import image1 from '../../assets/product1.jpg'
 
 function HomeStore() {
   const products = [
