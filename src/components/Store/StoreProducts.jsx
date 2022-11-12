@@ -2,7 +2,7 @@ import React from 'react'
 import Product from '../Product'
 import image1 from '../../assets/product1.jpg'
 
-function HomeStore() {
+function StoreProducts() {
   const products = [
     {
       image: image1,
@@ -34,8 +34,30 @@ function HomeStore() {
     <section className='bg-primary-400 py-4 md:py-8 mt-10'>
       <div className='mx-auto max-w-7xl w-11/12'>
         <h2 className='text-center font-semibold text-slate-700 text-xl md:text-3xl uppercase pt-4'>
-          Productos Destacados
+          Tienda
         </h2>
+        <div className='grid grid-cols-auto-fit gap-4 mt-10 justify-center'>
+          {products.map((product, index) => (
+            <Product
+              image={product.image}
+              alt={product.alt}
+              title={product.title}
+              price={product.price}
+              key={index}
+            />
+          ))}
+        </div>
+        <div className='grid grid-cols-auto-fit gap-4 mt-10 justify-center'>
+          {products.map((product, index) => (
+            <Product
+              image={product.image}
+              alt={product.alt}
+              title={product.title}
+              price={product.price}
+              key={index}
+            />
+          ))}
+        </div>
         <div className='grid grid-cols-auto-fit gap-4 mt-10 justify-center'>
           {products.map((product, index) => (
             <Product
@@ -52,4 +74,4 @@ function HomeStore() {
   )
 }
 
-export default HomeStore
+export default StoreProducts
