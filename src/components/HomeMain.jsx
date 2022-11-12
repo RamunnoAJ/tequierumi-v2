@@ -7,7 +7,7 @@ import HomeImage from '../components/HomeImage'
 function HomeMain() {
   return (
     <main>
-      <div className='max-w-7xl w-11/12 mx-auto flex flex-col md:flex-row justify-center items-center gap-4 py-10'>
+      <div className='max-w-7xl w-11/12 min-h-full-screen mx-auto flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 py-4 md:py-10'>
         <div className='flex flex-col gap-4 justify-center items-center basis-1/2 shrink-0'>
           <h1 className='text-center uppercase text-accent-400 font-bold text-4xl md:text-6xl'>
             Tequierumi
