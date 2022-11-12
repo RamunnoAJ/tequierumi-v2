@@ -11,10 +11,16 @@ module.exports = {
         accent: {
           400: '#ef8405'
         }
+      },
+      gridTemplateColumns: {
+        'auto-fit': 'repeat(auto-fit, minmax(220px, 300px))'
       }
     },
     fontFamily: {
       Montserrat: 'Montserrat Alternates'
+    },
+    minHeight: {
+      'full-screen': 'calc(100vh - 128px)'
     }
   },
   plugins: []
