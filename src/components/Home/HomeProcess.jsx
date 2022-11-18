@@ -30,8 +30,11 @@ function HomeProcess() {
         </h2>
         <div className='grid md:grid-cols-3.'>
           <div className='flex justify-center items-center flex-col md:flex-row gap-4 md:gap-8'>
-            {items.map((item) => (
-              <div className='bg-gray-100 py-4 md:py-8 w-72 rounded-lg flex flex-col justify-center items-center gap-4'>
+            {items.map((item, index) => (
+              <div
+                className='bg-gray-100 py-4 md:py-8 w-72 rounded-lg flex flex-col justify-center items-center gap-4'
+                key={index}
+              >
                 <h3 className='uppercase font-semibold text-slate-700 text-xl flex items-center gap-4'>
                   {item.title}{' '}
                   <i className={`${item.icon} text-2xl text-slate-700`}></i>
