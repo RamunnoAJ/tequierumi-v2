@@ -1,8 +1,17 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import ContactContent from '../components/Contact/ContactContent'
 
 function Contact() {
-  return <div>Contact</div>
+  return (
+    <>
+      <Header />
+      <ContactContent />
+      <Footer />
+    </>
+  )
 }
 
 export default Contact
