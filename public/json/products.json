@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "image": "./assets/product1.jpg",
+    "alt": "Imagen de amigurumi",
+    "name": "Pato",
+    "price": 500
+  },
+  {
+    "id": 2,
+    "image": "./assets/product1.jpg",
+    "alt": "Imagen de amigurumi",
+    "name": "Oso",
+    "price": 500
+  },
+  {
+    "id": 3,
+    "image": "./assets/product1.jpg",
+    "alt": "Imagen de amigurumi",
+    "name": "Osos",
+    "price": 500
+  },
+  {
+    "id": 4,
+    "image": "./assets/product1.jpg",
+    "alt": "Imagen de amigurumi",
+    "name": "Mandril",
+    "price": 500
+  },
+  {
+    "id": 5,
+    "image": "./assets/product1.jpg",
+    "alt": "Imagen de amigurumi",
+    "name": "Conejo",
+    "price": 500
+  },
+  {
+    "id": 6,
+    "image": "./assets/product1.jpg",
+    "alt": "Imagen de amigurumi",
+    "name": "Conejos",
+    "price": 500
+  },
+  {
+    "id": 7,
+    "image": "./assets/product1.jpg",
+    "alt": "Imagen de amigurumi",
+    "name": "Rata",
+    "price": 500
+  },
+  {
+    "id": 8,
+    "image": "./assets/product1.jpg",
+    "alt": "Imagen de amigurumi",
+    "name": "Mono",
+    "price": 500
+  }
+]

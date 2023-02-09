@@ -1,32 +1,15 @@
+import { useEffect, useState } from 'react'
+import { getDataFromDB } from '../../utils/getDataFromDB'
 import Product from '../Product'
 
 function HomeStore() {
-  const products = [
-    {
-      image: './assets/product1.jpg',
-      alt: 'Imagen de amigurumi',
-      title: 'Producto',
-      price: '$500',
-    },
-    {
-      image: './assets/product1.jpg',
-      alt: 'Imagen de amigurumi',
-      title: 'Producto',
-      price: '$500',
-    },
-    {
-      image: './assets/product1.jpg',
-      alt: 'Imagen de amigurumi',
-      title: 'Producto',
-      price: '$500',
-    },
-    {
-      image: './assets/product1.jpg',
-      alt: 'Imagen de amigurumi',
-      title: 'Producto',
-      price: '$500',
-    },
-  ]
+  const [prods, setProds] = useState([])
+
+  useEffect(() => {
+    getDataFromDB('./json/products.json').then((products) => {
+      setProds(products)
+    })
+  }, [])
 
   return (
     <section className='bg-primary-400 py-4 md:py-8 mt-10'>
@@ -35,13 +18,10 @@ function HomeStore() {
           Productos Destacados
         </h2>
         <div className='grid grid-cols-auto-fit gap-4 mt-10 justify-center'>
-          {products.map((product, index) => (
+          {prods.slice(0, 4).map((product) => (
             <Product
-              image={product.image}
-              alt={product.alt}
-              title={product.title}
-              price={product.price}
-              key={index}
+              item={product}
+              key={product.id}
             />
           ))}
         </div>

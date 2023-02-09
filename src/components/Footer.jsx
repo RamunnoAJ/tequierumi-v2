@@ -6,7 +6,7 @@ function Footer() {
   const igLink = 'https://www.instagram.com/tequierumi/'
 
   return (
-    <footer className='bg-primary-400 py-8 mt-10'>
+    <footer className='bg-primary-400 py-8'>
       <div className='max-w-5xl mx-auto w-11/12 grid grid-cols-2 md:grid-cols-3 gap-4 justify-items-center items-center'>
         <Link to={'/'}>
           <Logo />
