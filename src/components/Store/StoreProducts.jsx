@@ -1,69 +1,32 @@
+import { useEffect, useState } from 'react'
 import Product from '../Product'
+import { getDataFromDB } from '../../utils/getDataFromDB'
+import { StoreSearchInput } from './StoreSearchInput'
 
 function StoreProducts() {
-  const products = [
-    {
-      image: './assets/product1.jpg',
-      alt: 'Imagen de amigurumi',
-      title: 'Producto',
-      price: '$500',
-    },
-    {
-      image: './assets/product1.jpg',
-      alt: 'Imagen de amigurumi',
-      title: 'Producto',
-      price: '$500',
-    },
-    {
-      image: './assets/product1.jpg',
-      alt: 'Imagen de amigurumi',
-      title: 'Producto',
-      price: '$500',
-    },
-    {
-      image: './assets/product1.jpg',
-      alt: 'Imagen de amigurumi',
-      title: 'Producto',
-      price: '$500',
-    },
-  ]
+  const [prods, setProds] = useState([])
+
+  useEffect(() => {
+    getDataFromDB('./json/products.json').then((products) => setProds(products))
+  }, [])
 
   return (
-    <section className='bg-primary-400 py-4 md:py-8 mt-10'>
-      <div className='mx-auto max-w-7xl w-11/12'>
-        <h2 className='text-center font-semibold text-slate-700 text-xl md:text-3xl uppercase pt-4'>
-          Tienda
-        </h2>
-        <div className='grid grid-cols-auto-fit gap-4 mt-10 justify-center'>
-          {products.map((product, index) => (
-            <Product
-              image={product.image}
-              alt={product.alt}
-              title={product.title}
-              price={product.price}
-              key={index}
-            />
-          ))}
+    <section className='py-4 border-t bg-primary-400 md:py-8 border-accent-400'>
+      <div className='flex flex-col w-11/12 mx-auto max-w-7xl'>
+        <div className='flex flex-col justify-between md:flex-row'>
+          <h2 className='pt-4 mb-4 text-3xl font-semibold text-center uppercase md:mb-8 text-slate-700 md:text-5xl'>
+            Tienda
+          </h2>
+          <StoreSearchInput
+            prods={prods}
+            setProds={setProds}
+          />
         </div>
-        <div className='grid grid-cols-auto-fit gap-4 mt-10 justify-center'>
-          {products.map((product, index) => (
+        <div className='grid justify-center gap-4 mt-10 grid-cols-auto-fit md:gap-6'>
+          {prods.map((prod) => (
             <Product
-              image={product.image}
-              alt={product.alt}
-              title={product.title}
-              price={product.price}
-              key={index}
-            />
-          ))}
-        </div>
-        <div className='grid grid-cols-auto-fit gap-4 mt-10 justify-center'>
-          {products.map((product, index) => (
-            <Product
-              image={product.image}
-              alt={product.alt}
-              title={product.title}
-              price={product.price}
-              key={index}
+              item={prod}
+              key={prod.id}
             />
           ))}
         </div>
