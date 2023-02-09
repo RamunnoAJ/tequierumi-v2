@@ -1,29 +1,28 @@
 import React from 'react'
 import Product from '../Product'
-import image1 from '../../assets/product1.jpg'
 
 function HomeStore() {
   const products = [
     {
-      image: image1,
+      image: './assets/product1.jpg',
       alt: 'Imagen de amigurumi',
       title: 'Producto',
       price: '$500'
     },
     {
-      image: image1,
+      image: './assets/product1.jpg',
       alt: 'Imagen de amigurumi',
       title: 'Producto',
       price: '$500'
     },
     {
-      image: image1,
+      image: './assets/product1.jpg',
       alt: 'Imagen de amigurumi',
       title: 'Producto',
       price: '$500'
     },
     {
-      image: image1,
+      image: './assets/product1.jpg',
       alt: 'Imagen de amigurumi',
       title: 'Producto',
       price: '$500'
