@@ -1,4 +1,3 @@
-import React from 'react'
 import ContactForm from './ContactForm'
 
 const ContactInfo = (props) => {
@@ -7,18 +6,18 @@ const ContactInfo = (props) => {
       icon: 'fa-brands fa-whatsapp',
       contact: '+54 2235126634',
       redirect:
-        'https://wa.me/542235126634/?text=Buenos días!%20Quisiera%20consultar%20sobre...'
+        'https://wa.me/542235126634/?text=Buenos días!%20Quisiera%20consultar%20sobre...',
     },
     {
       icon: 'fa-brands fa-instagram',
       contact: 'Tequierumi',
-      redirect: 'https://www.instagram.com/tequierumi/'
+      redirect: 'https://www.instagram.com/tequierumi/',
     },
     {
       icon: 'fa-brands fa-facebook',
       contact: 'Tequierumi amigurumis',
-      redirect: 'https://www.facebook.com/tequierumi.amigurumis.5'
-    }
+      redirect: 'https://www.facebook.com/tequierumi.amigurumis.5',
+    },
   ]
 
   return (
@@ -33,8 +32,8 @@ const ContactInfo = (props) => {
               <a
                 href={social.redirect}
                 target='_blank'
-                className=' cursor-pointer uppercase font-medium text-slate-700 hover:text-accent-400 transition-all duration-300 ease-in-out'
-              >
+                rel='noreferrer'
+                className=' cursor-pointer uppercase font-medium text-slate-700 hover:text-accent-400 transition-all duration-300 ease-in-out'>
                 <i className={`text-accent-400 text-xl ${social.icon}`}></i>{' '}
                 {social.contact}
               </a>

@@ -1,4 +1,3 @@
-import React from 'react'
 import Product from '../Product'
 
 function StoreProducts() {
@@ -7,26 +6,26 @@ function StoreProducts() {
       image: './assets/product1.jpg',
       alt: 'Imagen de amigurumi',
       title: 'Producto',
-      price: '$500'
+      price: '$500',
     },
     {
       image: './assets/product1.jpg',
       alt: 'Imagen de amigurumi',
       title: 'Producto',
-      price: '$500'
+      price: '$500',
     },
     {
       image: './assets/product1.jpg',
       alt: 'Imagen de amigurumi',
       title: 'Producto',
-      price: '$500'
+      price: '$500',
     },
     {
       image: './assets/product1.jpg',
       alt: 'Imagen de amigurumi',
       title: 'Producto',
-      price: '$500'
-    }
+      price: '$500',
+    },
   ]
 
   return (
