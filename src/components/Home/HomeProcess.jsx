@@ -1,25 +1,23 @@
-import React from 'react'
-
 function HomeProcess() {
   const items = [
     {
       title: 'Encargas',
       content:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, nesciunt.',
-      icon: 'fa-solid fa-envelope'
+      icon: 'fa-solid fa-envelope',
     },
     {
       title: 'Tejemos',
       content:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, nesciunt.',
-      icon: 'fa-solid fa-wand-magic-sparkles'
+      icon: 'fa-solid fa-wand-magic-sparkles',
     },
     {
       title: 'Entregamos',
       content:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, nesciunt.',
-      icon: 'fa-solid fa-truck-fast'
-    }
+      icon: 'fa-solid fa-truck-fast',
+    },
   ]
 
   return (
@@ -33,8 +31,7 @@ function HomeProcess() {
             {items.map((item, index) => (
               <div
                 className='bg-gray-100 py-4 md:py-8 w-72 rounded-lg flex flex-col justify-center items-center gap-4'
-                key={index}
-              >
+                key={index}>
                 <h3 className='uppercase font-semibold text-slate-700 text-xl flex items-center gap-4'>
                   {item.title}{' '}
                   <i className={`${item.icon} text-2xl text-slate-700`}></i>

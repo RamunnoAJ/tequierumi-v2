@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import Logo from './icons/Logo'
 
@@ -17,40 +16,35 @@ function Footer() {
             <li>
               <Link
                 to={'/'}
-                className='hover:text-accent-400 transition-all duration-300 ease-out'
-              >
+                className='hover:text-accent-400 transition-all duration-300 ease-out'>
                 Inicio
               </Link>
             </li>
             <li>
               <Link
                 to={'/store'}
-                className='hover:text-accent-400 transition-all duration-300 ease-out'
-              >
+                className='hover:text-accent-400 transition-all duration-300 ease-out'>
                 Tienda
               </Link>
             </li>
             <li>
               <Link
                 to={'/contact'}
-                className='hover:text-accent-400 transition-all duration-300 ease-out'
-              >
+                className='hover:text-accent-400 transition-all duration-300 ease-out'>
                 Contacto
               </Link>
             </li>
             <li>
               <Link
                 to={'/about-us'}
-                className='hover:text-accent-400 transition-all duration-300 ease-out'
-              >
+                className='hover:text-accent-400 transition-all duration-300 ease-out'>
                 Quienes Somos
               </Link>
             </li>
             <li>
               <Link
                 to={'/login'}
-                className='hover:text-accent-400 transition-all duration-300 ease-out'
-              >
+                className='hover:text-accent-400 transition-all duration-300 ease-out'>
                 Cuenta
               </Link>
             </li>
@@ -59,16 +53,16 @@ function Footer() {
         <div className='flex md:flex-col items-center justify-center gap-4 text-gray-600 opacity-60 text-l col-span-2 md:col-span-1 font-medium'>
           <a
             href={fbLink}
+            rel='noreferrer'
             target='_blank'
-            className='hover:text-accent-400 transition-all duration-300 ease-out'
-          >
+            className='hover:text-accent-400 transition-all duration-300 ease-out'>
             <i className='fa-brands fa-facebook'></i> Facebook
           </a>
           <a
             href={igLink}
             target='_blank'
-            className='hover:text-accent-400 transition-all duration-300 ease-out'
-          >
+            rel='noreferrer'
+            className='hover:text-accent-400 transition-all duration-300 ease-out'>
             <i className='fa-brands fa-instagram'></i> Instagram
           </a>
         </div>
