@@ -1,9 +1,12 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Logo from './icons/Logo'
+import { UserAuth } from '../contexts/AuthContext'
 
 function Header() {
   const [isNavExpanded, setIsNavExpanded] = useState(false)
+  const { user } = UserAuth()
+  console.log(user)
 
   const handleSetIsNavExpanded = () => {
     setIsNavExpanded(!isNavExpanded)
@@ -50,7 +53,7 @@ function Header() {
             </li>
             <li>
               <Link
-                to={'/login'}
+                to={user ? '/dashboard' : '/login'}
                 className='hover:text-black transition-all duration-300 ease-in-out'>
                 <i className='fa-solid fa-user'></i>
               </Link>
