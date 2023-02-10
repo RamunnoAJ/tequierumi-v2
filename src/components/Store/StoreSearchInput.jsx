@@ -36,7 +36,7 @@ export const StoreSearchInput = ({ setProds }) => {
           placeholder={'Buscar por nombre'}
           className='p-1 md:px-4'
           id='search'
-          autoComplete={'false'}
+          autoComplete={'off'}
         />
       </div>
       <button

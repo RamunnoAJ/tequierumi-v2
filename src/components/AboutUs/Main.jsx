@@ -1,6 +1,6 @@
 export const Main = () => {
   return (
-    <main className='w-11/12 mx-auto my-10 md:my-16 max-w-7xl'>
+    <main className='w-11/12 mx-auto my-10  max-w-7xl'>
       <div className='flex flex-col items-center gap-4 md:gap-8'>
         <h1 className='text-4xl font-bold uppercase text-accent-400 md:text-6xl'>
           Quienes Somos
