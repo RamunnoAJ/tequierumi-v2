@@ -3,6 +3,9 @@ module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      minHeight: {
+        'full-screen': 'calc(100vh - 128px)',
+      },
       colors: {
         primary: {
           400: '#f1eecf',
@@ -18,9 +21,6 @@ module.exports = {
     },
     fontFamily: {
       Montserrat: 'Montserrat Alternates',
-    },
-    minHeight: {
-      'full-screen': 'calc(100vh - 128px)',
     },
   },
   plugins: [],
